@@ -2,15 +2,64 @@
     padding: 5rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .about-container {
+        flex-wrap: wrap;
+    }
 }
 
 .about-image {
     height: 400px;
     width: 100%;
+    background-image: url("../assets/profile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../assets/profile.jpg");
+    background-position: center;
+    border-radius: 1rem;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.about-image:hover {
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    gap: 1rem;
+}
+
+.about-me-description {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.resume-button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.resume-button {
+    display: flex;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    color: #ff885d;
+    background-color: #fff;
+    border: #ff885d solid 1px;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #ff885d;
+    cursor: pointer;
+    color: #fff;
 }
