@@ -3,10 +3,10 @@ import "../css/hero.css";
 function Hero() {
     return (
         <div className="hero">
-            <div className="typer-title">
-                <p>I specialise in Frontend and Backend solutions.</p>
-                <p>I'm passionate about building modern web applications.</p>
-                <p>I specialise in Frontend and Backend solutions.</p>
+            <div className="typewriter-container">
+                <p className="typewriter">I specialise in Frontend and Backend solutions.</p>
+                {/*<p className="typewriter">I'm passionate about building modern web applications.</p>*/}
+                {/*<p className="typewriter">I specialise in Frontend and Backend solutions.</p>*/}
             </div>
             <div className="intro">
                 <p className="intro-text">

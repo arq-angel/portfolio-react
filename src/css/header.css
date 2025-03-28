@@ -1,0 +1,11 @@
+.header {
+    height: 100vh;
+    background-image: url("../assets/nature.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+

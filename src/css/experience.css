@@ -1,0 +1,54 @@
+.experience {
+    background-color: #fff;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem 2rem;
+    background-color: #f3f7ff;
+    border-radius: 1rem;
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.1rem;
+}
+
+.card:hover {
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+}
+
+@media (max-width: 1200px) {
+    .experience {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hyphen {
+    font-size: 2rem;
+    color: #ff885d;
+    margin: 5px;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-description {
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+
+

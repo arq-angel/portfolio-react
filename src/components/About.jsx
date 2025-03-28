@@ -1,9 +1,14 @@
-import "../css/about.css";
+import "../css/experience.css";
 
 function About() {
     return (
-        <div className="about">
-            <p>About Section</p>
+        <div className="about-container">
+            <div className="about-image">
+            </div>
+            <div className="about-me">
+                <h1 className="about-me-title">About Me</h1>
+                <p className="about-me-description"></p>
+            </div>
         </div>
     )
 }
